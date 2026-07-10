@@ -1,0 +1,13 @@
+#  --- for scipy stubs
+
+# Ruff and lint
+
+- uv run ruff check --fix && uv run ruff format
+
+# Pyrefly
+
+- uv run pyrefly check tests/ndimage/test__fourier.pyi
+
+# mypy 
+
+- uv run mypy tests/ndimage/test__fourier.pyi
